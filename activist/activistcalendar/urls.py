@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^interest/(?P<input_interest_id>[0-9]+)$', 
         views.activist_interest, name='activist_interest'),
     url(r'^interest/(?P<input_interest_id>[0-9]+)/profiles$', 
-        views.activist_interest_profiles, name='activist_interest_profiles')
+        views.activist_interest_profiles, name='activist_interest_profiles'),
+
 ]

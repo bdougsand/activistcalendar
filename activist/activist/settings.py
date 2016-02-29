@@ -1,5 +1,10 @@
 # Django settings for activist project.
 
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -15,8 +20,8 @@ DATABASES = {
         'NAME': 'activist',                      # Or path to database file if using sqlite3.
         'USER': 'activist',                      # Not used with sqlite3.
         'PASSWORD': 'activist',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': 'localhost',                     # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                              # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -64,9 +69,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(SITE_ROOT,'static_root','static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -104,9 +107,8 @@ ROOT_URLCONF = 'activist.urls'
 WSGI_APPLICATION = 'activist.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(SITE_ROOT,'templates'),
+    os.path.join(BASE_DIR, 'static',  'templates'),
 )
 
 INSTALLED_APPS = (

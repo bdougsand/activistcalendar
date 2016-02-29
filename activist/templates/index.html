@@ -1,0 +1,106 @@
+<!doctype html>
+{% load staticfiles %}
+
+<!-- IMPORTING THE TEMPLATE BASE -->
+{% include 'header.html' %}
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section clearfix">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+
+    				<!-- Tabs start -->
+    				<!-- ================ -->
+    				<div class="horizontal hc-tabs">
+
+    					<div class="col-md-6">
+    						<!-- Tabs Top -->
+    						<div class="hc-tabs-top">
+    							<img data-tab="#tab1" src="{% static 'img/section-image-1.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall" class="current-img show fadeInRightSmall animated">
+    							<img data-tab="#tab2" src="{% static 'img/section-image-2.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    							<img data-tab="#tab3" src="{% static 'img/section-image-3.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    							<img data-tab="#tab4" src="{% static 'img/section-image-4.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    						</div>
+    					</div>
+
+    					<div class="col-md-6">
+    						<!-- Nav tabs -->
+    						<ul class="nav nav-tabs" role="tablist">
+    							<li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true">Welcome!</a></li>
+    							<li><a href="#tab2" role="tab" data-toggle="tab">Create Profile</a></li>
+    							<li><a href="#tab3" role="tab" data-toggle="tab">Highlights</a></li>
+    							<li><a href="#tab4" role="tab" data-toggle="tab">Get Involved</a></li>
+    						</ul>
+
+    						<!-- Tab panes -->
+    						<div class="tab-content">
+    							<div class="tab-pane fade in active" id="tab1">
+    								<h3 class="text-center title">Carousel 1</h3>
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Read more</a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab2">
+    								<h3 class="text-center title">Carousel 2</h3>
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Read more</a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab3">
+    								<h3 class="text-center title">Carousel 3</h3>
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Read more</a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab4">
+    								<h3 class="text-center title">Carousel 4</h3>
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Read more</a>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+
+    					</div>
+    				</div>
+    				<!-- tabs end -->
+    	
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- section end -->
+
+    {% include 'footer.html' %}
+
+    </body>
+</html>
