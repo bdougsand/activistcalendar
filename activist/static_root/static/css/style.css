@@ -2600,6 +2600,7 @@ ul.pagination li > a:focus {
 		float: none;
 	}
 	.nav-tabs > li a {
+		font-size: 9px;
 		color: #ffffff;
 		margin-right: 0;
 		border-bottom: 1px solid #8f8f8f;
@@ -3729,7 +3730,7 @@ a.overlay.small i {
 /* Medium devices (tablets landscape to portrait) */
 @media (min-width:768px) and (max-width:991px) {
 	.main-navigation .navbar-nav {
-		float: left !important;
+		/*float: left !important; MVP */
 	}
 }
 
@@ -4050,10 +4051,10 @@ a.overlay.small i {
 @media (max-width:991px) {
 	.logo img,
 	.header-small .logo img {
-		margin: 0 auto;
+		/*margin: 0 auto; MVP */
 	}
 	.site-slogan {
-		text-align: center;
+		/*text-align: center; MVP */
 	}
 }
 

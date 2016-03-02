@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+    {% include 'header_mvp.html' %}
+
+    <!-- header start -->
+    <header class="header fixed clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- header-left start -->
+                    <div class="header-left clearfix">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="/"><img id="logo" src="{% static 'img/logo.png' %}" style="width:250px" alt="ActivistCalendar"></a>
+                        </div>
+                        <!-- name and slogan -->
+                        <div class="site-slogan">
+                            Developing Alliances for Community Wellbeing
+                        </div>
+                    </div>
+                    <!-- header-left end -->
+                </div>
+
+                <div class="col-md-12">
+                    <!-- header-right start -->
+                    <div class="header-right clearfix">
+                        <!-- main-navigation start -->
+                        <div class="main-navigation animated">
+                            <!-- navbar start -->
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <!-- Toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active">
+                                              <a>Home</a>
+                                            </li>
+                                            <li class="dropdown">
+                                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About</a>
+                                              <ul class="dropdown-menu" role="menu">
+                                                <li><a href="/mission_and_vision/">Mission and Vision</a></li>
+                                                <li><a href="/history/">History</a></li>
+                                                <li><a href="/team/">Team</a></li>
+                                                <li><a href="/get_involved/">How You Can Get Involved</a></li>
+                                              </ul>
+                                            </li>
+                                            <li>
+                                                <a href="/contact_us/">Contact Us</a>
+                                            </li>                           
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </nav>
+                            <!-- navbar end -->
+                        </div>
+                        <!-- main-navigation end -->
+                    </div>
+                    <!-- header-right end -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->    
+
+    <!-- section start -->
+    <!-- ================ -->
+    <div class="section clearfix">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+
+   	    			<!-- Tabs start -->
+       				<!-- ================ -->
+    				<div class="horizontal hc-tabs">
+
+    					<div class="col-md-6">
+    						<!-- Tabs Top -->
+    						<div class="hc-tabs-top">
+    							<img data-tab="#tab1" src="{% static 'img/section-image-1.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall" class="current-img show fadeInRightSmall animated">
+    							<img data-tab="#tab2" src="{% static 'img/section-image-2.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    							<img data-tab="#tab3" src="{% static 'img/section-image-3.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    							<img data-tab="#tab4" src="{% static 'img/section-image-4.png' %}" alt="" data-tab-animation-effect="fadeInRightSmall">
+    						</div>
+    					</div>
+
+    					<div class="col-md-6">
+    						<!-- Nav tabs -->
+    						<ul class="nav nav-tabs" role="tablist">
+    							<li class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="true">Welcome!</a></li>
+    							<li><a href="#tab2" role="tab" data-toggle="tab">Our Mission</a></li>
+    							<li><a href="#tab3" role="tab" data-toggle="tab">Get Involved</a></li>
+    							<li><a href="#tab4" role="tab" data-toggle="tab">Donate</a></li>
+    						</ul>
+
+    						<!-- Tab panes -->
+    						<div class="tab-content" style="min-height: 250px;">
+    							<div class="tab-pane fade in active" id="tab1">
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab2">
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Mission and Vision</a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab3">
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Get Involved</a>
+    									</div>
+    								</div>
+    							</div>
+    							<div class="tab-pane fade" id="tab4">
+    								<div class="row">
+    									<div class="col-xs-12">
+    										<ul class="list-icons">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    									</div>
+    									<div class="col-xs-12">
+    										<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+    										<a href="#" class="btn btn-default">Donate now</a>
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+
+    					</div>
+    				</div>
+    				<!-- tabs end -->
+    	
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- section end -->
+
+    {% include 'footer_mvp.html' %}

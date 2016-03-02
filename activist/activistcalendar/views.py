@@ -6,7 +6,28 @@ from django.core.exceptions import ValidationError, NON_FIELD_ERRORS
 
 
 def index(request):
-    return render_to_response('index.html',context_instance=RequestContext(request))
+    return render_to_response('index_mvp.html',context_instance=RequestContext(request))
+
+
+def mission_and_vision(request):
+    return render_to_response('mission_and_vision.html',context_instance=RequestContext(request))
+
+
+def history(request):
+    return render_to_response('history.html',context_instance=RequestContext(request))
+
+
+def team(request):
+    return render_to_response('team.html',context_instance=RequestContext(request))
+
+
+def get_involved(request):
+    return render_to_response('get_involved.html',context_instance=RequestContext(request))
+
+
+def contact_us(request):
+    return render_to_response('contact_us.html',context_instance=RequestContext(request))
+
 
 
 # def activist_profile(input_profile_id):

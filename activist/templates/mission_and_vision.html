@@ -13,7 +13,7 @@
                     <div class="header-left clearfix">
                         <!-- logo -->
                         <div class="logo">
-							<a href="/"><img id="logo" src="{% static 'img/logo.png' %}" style="width:250px" alt="ActivistCalendar"></a>
+                            <a href="/"><img id="logo" src="{% static 'img/logo.png' %}" style="width:250px" alt="ActivistCalendar"></a>
                         </div>
                         <!-- name and slogan -->
                         <div class="site-slogan">
@@ -47,17 +47,17 @@
                                             <li>
                                                 <a href="/">Home</a>
                                             </li>
-                                            <li class="dropdown">
+                                            <li class="dropdown active">
                                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About</a>
                                               <ul class="dropdown-menu" role="menu">
-                                                <li><a href="/mission_and_vision/">Mission and Vision</a></li>
+                                                <li><a style="color: #F47643;">Mission and Vision</a></li>
                                                 <li><a href="/history/">History</a></li>
                                                 <li><a href="/team/">Team</a></li>
                                                 <li><a href="/get_involved/">How You Can Get Involved</a></li>
                                               </ul>
                                             </li>
-                                            <li class="active">
-                                                <a>Contact Us</a>
+                                            <li>
+                                                <a href="/contact_us/">Contact Us</a>
                                             </li>                           
                                         </ul>
                                     </div>
@@ -79,90 +79,17 @@
 	<div class="section clearfix">
 		<div class="container">
 
-			<h2>Contact Us</h2>
+			<h2>Mission</h2>
 			<div class="separator-2"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
 
-			<div class="row">
-
-				<!-- main start -->
-				<div class="main col-md-12">
-
-					<div class="row">
-						<div class="col-md-6">
-							<p>We want to hear from you! Send us ideas, questions and feedback. We'll get back to you within two days.</p>
-							<div class="alert alert-success hidden" id="contactSuccess">
-								<strong>Success!</strong> We have received your message.
-							</div>
-							<div class="alert alert-danger hidden" id="contactError">There was an error sending your message.
-							</div>
-							<div class="contact-form">
-								<form id="contact-form" role="form">
-									<div class="form-group has-feedback">
-										<label for="name">Name*</label>
-										<input type="text" class="form-control" id="name" name="name" placeholder="">
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="email">Email*</label>
-										<input type="email" class="form-control" id="email" name="email" placeholder="">
-										<i class="fa fa-envelope form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="subject">Subject*</label>
-										<input type="text" class="form-control" id="subject" name="subject" placeholder="">
-										<i class="fa fa-navicon form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="message">Message*</label>
-										<textarea class="form-control" rows="5" id="message" name="message" placeholder=""></textarea>
-										<i class="fa fa-pencil form-control-feedback"></i>
-									</div>
-									<input type="submit" value="Submit" class="btn btn-default">
-								</form>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<!-- google maps start -->
-							<div id="map-canvas" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0px);">
-
-								<script src="https://maps.googleapis.com/maps/api/js"></script>
-							<script>
-								function initialize() {
-						        var mapCanvas = document.getElementById('map-canvas');
-						        var LatLng = new google.maps.LatLng(42.3583333,-71.0602778);
-						        var mapOptions = {
-						          center: LatLng,
-						          zoom: 10,
-											scrollwheel: false,
-											disableDefaultUI:true, 
-									    draggable: false,
-									    disableDoubleClickZoom: true,
-											mapTypeId: google.maps.MapTypeId.ROADMAP
-						        }
-						        var map = new google.maps.Map(mapCanvas, mapOptions);
-						        var marker = new google.maps.Marker({
-										position: LatLng,
-										map: map,
-										title: 'Activist Calendar'
-										});
-						      }
-							google.maps.event.addDomListener(window, 'load', initialize);
-							</script>
-							<!-- google maps end -->
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<!-- main end -->
-				
-			</div>
-
-			<div class="space"></div>
+			<h2>Vision</h2>
+			<div class="separator-2"></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+			
 		</div>
 	</div>
 	<!-- section end -->
 
-
+	
 	{% include 'footer_mvp.html' %}
