@@ -8,7 +8,7 @@ from activistcalendar import views
 
 urlpatterns = patterns('',
 
-	url(r'^index/$', views.index, name='index')
+	url(r'^$', views.index, name='index')
 
     # Examples:
     # url(r'^$', 'activist.views.home', name='home'),
