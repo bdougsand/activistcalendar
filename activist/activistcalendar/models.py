@@ -45,3 +45,10 @@ class Profile(authmodels.User):
     activist_events = models.ManyToManyField(ActivistEvent)
     activist_interests = models.ManyToManyField(ActivistInterest)
     date_created = models.DateField(auto_now=True, auto_now_add=True)
+
+class OutsideContact(models.Model):
+    contact_id = UUIDField(auto=True, unique=True)
+    contact_name = models.CharField(max_length=2048)
+    contact_email = models.EmailField(max_length=2048, unique=True)
+    contact_subject = models.CharField(max_length=2048)
+    contact_message = models.TextField()

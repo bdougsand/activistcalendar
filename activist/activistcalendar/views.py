@@ -32,6 +32,18 @@ def contact_us(request):
 def donate(request):
     return render_to_response('donate.html',context_instance=RequestContext(request))
 
+def contact_submit(input_contact_name, input_contact_email, input_contact_subject, input_contact_message)
+     try:
+         contact = OutsideContact(contact_name=input_contact_name,
+                                  contact_email=input_contact_email,
+                                  contact_subject=input_contact_subject,
+                                  contact_message=input_contact_message)
+         contact.save()
+         return render_to_response('index_mvp.html')
+     except ValidationError as e:
+         non_field_errors = e.message_dict[NON_FIELD_ERRORS]
+         return render_to_response('history.html')
+
 
 # def activist_profile(input_profile_id):
 #     try:
@@ -90,10 +102,10 @@ def donate(request):
 #                           inputdescription):
 #     try:
 #         group = ActivistGroup.objects.get(user_id=input_group_id)
-#         event = ActivistEvent(host_group=group, date=inputdate, time=inputtime, 
+#         event = ActivistEvent(host_group=group, date=inputdate, time=inputtime,
 #                               address_line1=inputaddress1, address_line2=inputaddress2,
 #                               city=inputcity, province=inputprovince, country=inputcountry,
-#                               contact_email=inputcontact_email, event_url=inputevent_url, 
+#                               contact_email=inputcontact_email, event_url=inputevent_url,
 #                               description=inputdescription)
 #         event.save()
 #         return render_to_response('views/events.html', {'events': [event]})
