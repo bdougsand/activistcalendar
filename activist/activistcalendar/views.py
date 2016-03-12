@@ -32,7 +32,7 @@ def contact_us(request):
 def donate(request):
     return render_to_response('donate.html',context_instance=RequestContext(request))
 
-def contact_submit(input_contact_name, input_contact_email, input_contact_subject, input_contact_message)
+def contact_submit(input_contact_name, input_contact_email, input_contact_subject, input_contact_message):
      try:
          contact = OutsideContact(contact_name=input_contact_name,
                                   contact_email=input_contact_email,

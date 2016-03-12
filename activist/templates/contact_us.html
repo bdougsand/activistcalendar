@@ -58,7 +58,7 @@
                                             </li>
                                             <li class="active">
                                                 <a>Contact Us</a>
-                                            </li>                           
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -73,7 +73,7 @@
             </div>
         </div>
     </header>
-    <!-- header end -->   
+    <!-- header end -->
 
 	<!-- section start -->
 	<div class="section clearfix">
@@ -96,25 +96,25 @@
 							<div class="alert alert-danger hidden" id="contactError">There was an error sending your message.
 							</div>
 							<div class="contact-form">
-								<form id="contact-form" role="form">
+								<form id="contact-form" role="form" action="/contact_submit/" method="post">
 									<div class="form-group has-feedback">
 										<label for="name">Name*</label>
-										<input type="text" class="form-control" id="name" name="name" placeholder="">
+										<input type="text" class="form-control" id="name" name="input_contact_name" placeholder="">
 										<i class="fa fa-user form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label for="email">Email*</label>
-										<input type="email" class="form-control" id="email" name="email" placeholder="">
+										<input type="email" class="form-control" id="email" name="input_contact_email" placeholder="">
 										<i class="fa fa-envelope form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label for="subject">Subject*</label>
-										<input type="text" class="form-control" id="subject" name="subject" placeholder="">
+										<input type="text" class="form-control" id="subject" name="input_contact_subject" placeholder="">
 										<i class="fa fa-navicon form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label for="message">Message*</label>
-										<textarea class="form-control" rows="5" id="message" name="message" placeholder=""></textarea>
+										<textarea class="form-control" rows="5" id="message" name="input_contact_message" placeholder=""></textarea>
 										<i class="fa fa-pencil form-control-feedback"></i>
 									</div>
 									<input type="submit" value="Submit" class="btn btn-default">
@@ -135,7 +135,7 @@
 						          center: LatLng,
 						          zoom: 10,
 											scrollwheel: false,
-											disableDefaultUI:true, 
+											disableDefaultUI:true,
 									    draggable: false,
 									    disableDoubleClickZoom: true,
 											mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -156,7 +156,7 @@
 
 				</div>
 				<!-- main end -->
-				
+
 			</div>
 
 			<div class="space"></div>
