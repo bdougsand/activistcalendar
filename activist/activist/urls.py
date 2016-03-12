@@ -13,7 +13,8 @@ urlpatterns = patterns('',
 	url(r'^history/$', views.history, name='history'),
 	url(r'^team/$', views.team, name='team'),
 	url(r'^get_involved/$', views.get_involved, name='get_involved'),
-	url(r'^contact_us/$', views.contact_us, name='contact_us')
+	url(r'^contact_us/$', views.contact_us, name='contact_us'),
+    url(r'^donate/$', views.donate, name='donate')
 
     # Examples:
     # url(r'^$', 'activist.views.home', name='home'),
