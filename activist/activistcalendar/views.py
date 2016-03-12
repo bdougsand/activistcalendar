@@ -29,6 +29,9 @@ def contact_us(request):
     return render_to_response('contact_us.html',context_instance=RequestContext(request))
 
 
+def donate(request):
+    return render_to_response('donate.html',context_instance=RequestContext(request))
+
 
 # def activist_profile(input_profile_id):
 #     try:
