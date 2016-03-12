@@ -96,7 +96,8 @@
 							<div class="alert alert-danger hidden" id="contactError">There was an error sending your message.
 							</div>
 							<div class="contact-form">
-								<form id="contact-form" role="form" action="/contact_submit/" method="post">
+								<form id="contact-form" role="form">
+								  {% csrf_token %}
 									<div class="form-group has-feedback">
 										<label for="name">Name*</label>
 										<input type="text" class="form-control" id="name" name="input_contact_name" placeholder="">

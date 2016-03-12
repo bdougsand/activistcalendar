@@ -3,6 +3,7 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.core.exceptions import ValidationError, NON_FIELD_ERRORS
 #from activistcalendar.models import ActivistProfile, ActivistGroup, ActivistInterest, ActivistEvent
+from django.views.decorators.csrf import csrf_protect
 
 
 def index(request):
@@ -32,7 +33,9 @@ def contact_us(request):
 def donate(request):
     return render_to_response('donate.html',context_instance=RequestContext(request))
 
-def contact_submit(input_contact_name, input_contact_email, input_contact_subject, input_contact_message):
+@csrf_protect
+def contact_submit(form):
+     print form
      try:
          contact = OutsideContact(contact_name=input_contact_name,
                                   contact_email=input_contact_email,
