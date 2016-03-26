@@ -5,6 +5,7 @@ from django.core.exceptions import ValidationError, NON_FIELD_ERRORS
 #from activistcalendar.models import ActivistProfile, ActivistGroup, ActivistInterest, ActivistEvent
 from django.views.decorators.cache import never_cache
 from django.views.decorators.http import require_POST
+from activistcalendar.models import OutsideContact
 
 
 def index(request):
@@ -36,8 +37,12 @@ def donate(request):
 
 @require_POST
 @never_cache
-def contact_submit(form):
-     print form
+def contact_submit(request):
+     query_dict = request.POST
+     input_contact_name = query_dict['input_contact_name']
+     input_contact_email = query_dict['input_contact_email']
+     input_contact_subject = query_dict['input_contact_subject']
+     input_contact_message = query_dict['input_contact_message']
      try:
          contact = OutsideContact(contact_name=input_contact_name,
                                   contact_email=input_contact_email,

@@ -49,6 +49,6 @@ class Profile(authmodels.User):
 class OutsideContact(models.Model):
     contact_id = UUIDField(auto=True, unique=True)
     contact_name = models.CharField(max_length=2048)
-    contact_email = models.EmailField(max_length=2048, unique=True)
+    contact_email = models.EmailField(max_length=2048)
     contact_subject = models.CharField(max_length=2048)
     contact_message = models.TextField()
