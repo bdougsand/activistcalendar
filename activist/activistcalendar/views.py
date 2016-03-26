@@ -3,7 +3,8 @@ from django.http import Http404, HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.core.exceptions import ValidationError, NON_FIELD_ERRORS
 #from activistcalendar.models import ActivistProfile, ActivistGroup, ActivistInterest, ActivistEvent
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.cache import never_cache
+from django.views.decorators.http import require_POST
 
 
 def index(request):
@@ -33,7 +34,8 @@ def contact_us(request):
 def donate(request):
     return render_to_response('donate.html',context_instance=RequestContext(request))
 
-@csrf_protect
+@require_POST
+@never_cache
 def contact_submit(form):
      print form
      try:
