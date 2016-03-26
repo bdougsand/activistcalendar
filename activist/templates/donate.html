@@ -51,7 +51,7 @@
                                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About</a>
                                               <ul class="dropdown-menu" role="menu">
                                                 <li><a href="/mission_and_vision/">Mission and Vision</a></li>
-                                                <li><a href="/history/">History</a></li>
+                                                <!-- <li><a href="/history/">History</a></li> -->
                                                 <li><a href="/team/">Team</a></li>
                                                 <li><a href="/get_involved/">How You Can Get Involved</a></li>
                                               </ul>
@@ -82,9 +82,18 @@
 			<h2>Donate</h2>
 			<div class="separator-2"></div>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+			<p>Your contributions help us maintain this website and fuel our outreach and programming. Please support our efforts by making a tax-deductible gift! Any amount that is comfortable for you helps immensely.</p>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere hic qui non placeat ad explicabo dignissimos amet iusto veniam!</p>
+
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="3TD98FHVRC6WQ">
+                <input type="image" src="{% static 'img/pay-pal.png' %}" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" src="{% static 'img/pay-pal.png' %}" width="1" height="1">
+            </form>
+
+
 			
 		</div>
 	</div>

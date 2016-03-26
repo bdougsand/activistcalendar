@@ -10,7 +10,7 @@ urlpatterns = patterns('',
 
 	url(r'^$', views.index, name='index'),
 	url(r'^mission_and_vision/$', views.mission_and_vision, name='mission'),
-	url(r'^history/$', views.history, name='history'),
+	#url(r'^history/$', views.history, name='history'),
 	url(r'^team/$', views.team, name='team'),
 	url(r'^get_involved/$', views.get_involved, name='get_involved'),
 	url(r'^contact_us/$', views.contact_us, name='contact_us'),
