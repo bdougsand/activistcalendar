@@ -14,11 +14,9 @@ class ActivistGroup(models.Model):
     country = models.TextField(default="United States")
     group_url = models.URLField()
 
-
 class ActivistInterest(models.Model):
     interest_id = UUIDField(auto=True, unique=True)
     interest_name = models.TextField(unique=True)
-
 
 class ActivistEvent(models.Model):
     event_id = UUIDField(auto=True, unique=True)
@@ -34,9 +32,9 @@ class ActivistEvent(models.Model):
     event_url = models.URLField()
     description = models.TextField()
 
-
 class Profile(authmodels.User):
     user_id = UUIDField(auto=True, unique=True)
+    user_name = models.TextField()
     user_email = models.EmailField(max_length=2048, unique=True)
     phone_number = models.CharField(max_length=2048)
     website = models.URLField()
