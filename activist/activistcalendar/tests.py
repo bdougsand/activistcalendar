@@ -16,9 +16,6 @@ class ProfileTestCase(TestCase):
             phone_number="+5934382319",
             website="http://www.foo.org/",
             personal_message="Hello",
-            activist_groups=None,
-            activist_events=None,
-            activist_interests=None
         )
 
     def test_profile_exists(self):
@@ -30,6 +27,3 @@ class ProfileTestCase(TestCase):
         self.assertEqual(david.phone_number, "+5934382319")
         self.assertEqual(david.website, "http://www.foo.org/")
         self.assertEqual(david.personal_message, "Hello")
-        self.assertEqual(david.activist_groups, None)
-        self.assertEqual(david.activist_events, None)
-        self.assertEqual(david.activist_interests, None)
