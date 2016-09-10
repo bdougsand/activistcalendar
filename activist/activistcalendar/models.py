@@ -34,7 +34,7 @@ class ActivistEvent(models.Model):
 
 class Profile(authmodels.User):
     user_id = UUIDField(auto=True, unique=True)
-    user_name = models.TextField()
+    user_full_name = models.TextField()
     user_email = models.EmailField(max_length=2048, unique=True)
     phone_number = models.CharField(max_length=2048)
     website = models.URLField()
@@ -43,6 +43,7 @@ class Profile(authmodels.User):
     activist_events = models.ManyToManyField(ActivistEvent)
     activist_interests = models.ManyToManyField(ActivistInterest)
     date_created = models.DateField(auto_now=True, auto_now_add=True)
+
 
 class OutsideContact(models.Model):
     contact_id = UUIDField(auto=True, unique=True)
