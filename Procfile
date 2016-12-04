@@ -1,1 +1,1 @@
-web: gunicorn activist/activist/wsgi.py --log-file -
+web: gunicorn activist/activist/wsgi --log-file -
