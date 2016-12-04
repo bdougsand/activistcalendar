@@ -1,1 +1,1 @@
-web: gunicorn activist.activist.wsgi:application --log-file -
+web: gunicorn activist:app --preload --log-file -
