@@ -11,11 +11,11 @@ Activist Calendar will be an online calendar tool for activists to share their w
 While our web app is under development, we're actively sharing events out from our Facebook page. Follow us there to get info on upcoming activist events around Boston: https://www.facebook.com/activistcalendar
 
 ## Get involved!
-If you're interested in finding out more about this project and how to get involved, email Loreto Paz Ansaldo (lpansaldo |at| gmail |.| com) and Lyre Calliope (lyre.calliope |at| gmail |.| com) and we'll help you get started!
+If you're interested in finding out more about this project and how to get involved, email info@activistcalendar.org and we'll help you get started!
 
 ### ActCal Community Members
 * Write 'issues' for feature requests and bug reports: https://github.com/ActCal/activistcalendar/issues
-* Check out and contribute to open issues: https://github.com/ActCal/activistcalendar/issues/new
+* Check out open issues and contribute questions and feedback: https://github.com/ActCal/activistcalendar/issues/new
 * Send general feedback on the overall project to info@activistcalendar.org
 
 ### Software Developers
