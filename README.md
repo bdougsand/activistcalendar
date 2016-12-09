@@ -41,6 +41,15 @@ Here’s how to set up a dev environment:
 
 Once you’re set up, you’re ready to start working on issues! Check out the ‘ready’ column in our github integrated kanban board: [![Stories in Ready](https://badge.waffle.io/ActCal/activistcalendar.svg?label=ready&title=Ready)](http://waffle.io/ActCal/activistcalendar)
 
+### Docker Setup
+
+If you have [https://www.docker.com/products/overview#/install_the_platform](Docker) installed, setup is quick:
+
+* `git clone https://github.com/ActCal/activistcalendar.git`
+* `cd activistcalendar`
+* `docker-compose up`
+* Open http://localhost:8000
+
 
 ## Tutorials
 

@@ -17,10 +17,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'activist',                      # Or path to database file if using sqlite3.
-        'USER': 'activist',                      # Not used with sqlite3.
-        'PASSWORD': 'activist',                  # Not used with sqlite3.
-        'HOST': 'localhost',                     # Set to empty string for localhost. Not used with sqlite3.
+        'NAME': os.environ.get("PG_DB", "activist"),
+        'USER': os.environ.get("PG_USER", "activist"),
+        'PASSWORD': os.environ.get("PG_PASSWORD", "activist"),
+        'HOST': os.environ.get("PG_HOST"),                     # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                              # Set to empty string for default. Not used with sqlite3.
     }
 }

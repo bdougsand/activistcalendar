@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  activistcalendar:
+    image: python:2.7
+    ports:
+      - "8000:8000"
+    working_dir: /app
+    command: sh -c "pip install -r requirements.txt && python manage.py syncdb --noinput && python manage.py runserver 0.0.0.0:8000"
+    links:
+      - postgres
+    environment:
+      PG_HOST: postgres
+      PG_DB: postgres
+      PG_USER: postgres
+      PG_PASSWORD: ""
+  postgres:
+    image: postgres:latest
+
